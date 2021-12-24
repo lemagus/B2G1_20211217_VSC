@@ -1,0 +1,16 @@
+:root {
+
+    --color-dark: rgb(100,100,100);
+
+    --small-size: 0.8em;
+}
+
+@mixin fontSizeSmall {
+    
+    font-size: var(--small-size);
+    font-stretch: condensed;
+}
+
+@mixin darkColor {
+    background: var(--color-dark);
+}

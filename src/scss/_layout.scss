@@ -1,0 +1,12 @@
+body{
+    color: rgb(77, 50, 0);
+    background-color: blue;
+
+    @media (max-width: $breakpoint-tablet) {
+        background-color: red;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        background-color: green;
+    }
+}

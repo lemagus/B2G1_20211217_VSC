@@ -1,0 +1,42 @@
+
+:root {
+    --color-highlight: red;
+}
+
+.title {
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.6em;
+
+    &--big{
+        font-size: 3em;
+    }
+
+    &--small {
+        @include fontSizeSmall;
+    }
+
+}
+
+.form {
+
+    width: 100%;
+    @include darkColor;
+
+    &__input {
+
+        padding: 0.5em;
+
+        &--small{
+            
+            padding: 0.2em;
+            @include fontSizeSmall;
+
+        }
+
+        &::placeholder {
+            color: var(--color-highlight);
+        }
+    }
+
+}

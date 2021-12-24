@@ -1,0 +1,32 @@
+form {
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: 3em;
+    }
+
+    input {
+        background: lightblue;
+        border: none;
+        padding: 0.6em;
+
+        @media (min-width: $breakpoint-tablet) {
+            font-size: 6em;
+        }
+
+        @media (min-width: $breakpoint-mobile) {
+            font-size: 6em;
+        }
+    }
+
+    button {
+        border: 1px solid gray;
+        padding: 0.6em 1em;
+        text-align: center;
+        font-weight: bold;
+    }
+
+}
+
+form input::placeholder {
+    color: green;
+}
